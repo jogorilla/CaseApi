@@ -17,7 +17,7 @@ Dit was vrij frustrerend aangezien dit mij erg tegenhield om deel 3 van de asses
 Ondanks dit vind ik Swagger wel erg interressant en zou ik er erg graag meer over willen leren, wanneer ik wat meer tijd heb.
 Want doordat ik dit in mijn vrije tijd naast werk moet doen (Ik kom elke werk dag rond de 7 uur thuis), heb ik niet zo veel tijd eraan kunnen besteden als ik had gewilt.
 
-Uiteindelijk ben ik erg blij met wat ik geleerd heb, en zou ik graag meer op dit vlak willen leren, met een beetje extra tijd hahaha.
+Uiteindelijk ben ik erg blij met wat ik geleerd heb, en zou ik graag meer op dit vlak willen leren, wanneer ik wat meer tijd heb hahaha.
 
 
 
