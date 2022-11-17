@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CaseApi</name>
+    </assembly>
+    <members>
+        <member name="M:CaseApi.Controllers.AddressesController.GetAddresses(System.Nullable{System.Int32},System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Gets the list of all Addresses, or search for a specific one.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                GET api/Address
+                {        
+                  "HouseNumber": "88",
+                  "Street": "Examplestreet",
+                  "PostalCode": "2000BC",    
+                  "City": "Examplecity",     
+                  "Country": "Examplecountry",     
+                  "DescendingOrder": "false",     
+                }
+            </remarks>
+            <returns>The list of Addresses.</returns>
+        </member>
+        <member name="M:CaseApi.Controllers.AddressesController.GetAddress(System.Int32)">
+            <summary>
+            Gets Address by Id.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                GET api/Address/{Id}
+                {        
+                  "Id": "0"
+                }
+            </remarks>
+            <returns>Address by Id.</returns>
+        </member>
+        <member name="M:CaseApi.Controllers.AddressesController.PutAddress(System.Int32,CaseApi.Models.Address)">
+            <summary>
+            Updates Address by Id.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                PUT api/Address/{Id}
+                {        
+                  "Id": "0",   
+                  "HouseNumber": "88",
+                  "Street": "Examplestreet",
+                  "PostalCode": "2000BC",    
+                  "City": "Examplecity",     
+                  "Country": "Examplecountry",     
+                }
+            </remarks>
+        </member>
+        <member name="M:CaseApi.Controllers.AddressesController.PostAddress(CaseApi.Models.Address)">
+            <summary>
+            Post new Address.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/Address
+                {        
+                  "HouseNumber": "88",
+                  "Street": "Examplestreet",
+                  "PostalCode": "2000BC",    
+                  "City": "Examplecity",     
+                  "Country": "Examplecountry",     
+                }
+            </remarks>
+            <returns>The new Address.</returns>
+        </member>
+        <member name="M:CaseApi.Controllers.AddressesController.DeleteAddress(System.Int32)">
+            <summary>
+            Deletes Address by Id.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                DELETE api/Address/{Id}
+                {        
+                  "Id": "0"
+                }
+            </remarks>
+        </member>
+    </members>
+</doc>
