@@ -22,9 +22,20 @@ namespace CaseApi.Controllers
 
         // GET: api/Addresses
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Address>>> GetAddresses()
+        public async Task<ActionResult<IEnumerable<Address>>> GetAddresses(int? HouseNumber, string Street = "", string PostalCode = "", string City = "", string Country = "")
         {
-            return await _context.Addresses.ToListAsync();
+            //ToDo: Add sorting function
+
+            //This uses the parameters to search for addresses
+            List<Address> addresses = await _context.Addresses.Where(a => 
+                a.Street.Contains(Street) &&
+                a.HouseNumber == (!HouseNumber.HasValue ? a.HouseNumber : HouseNumber) && 
+                a.PostalCode.Contains(PostalCode) && 
+                a.City.Contains(City) && 
+                a.Country.Contains(Country)
+            ).ToListAsync();
+
+            return addresses;
         }
 
         // GET: api/Addresses/5
